@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<html dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mohammed Abumtary — AI Product Builder</title>
-<meta name="description" content="Mohammed Abumtary — AI Product Builder, Enterprise Workflow Automation & Full-Stack Developer. I build AI systems that turn requirements into executable software. Creator of ProcessFlow AI." />
-<meta name="theme-color" content="#0B1120" />
-<meta property="og:title" content="Mohammed Abumtary — AI Product Builder" />
-<meta property="og:description" content="I build AI systems that turn requirements into executable software. Creator of ProcessFlow AI." />
-<meta property="og:type" content="website" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mohammed Abumtary — AI Product Engineer</title>
+<meta content="AI product engineer building agent runtimes, creative software, mobile workspaces and document workflows. Charlotte, NC. Open to remote roles." name="description"/>
+<meta content="#0B1120" name="theme-color"/>
+<meta content="Mohammed Abumtary — AI Product Engineer" property="og:title"/>
+<meta content="AI product engineer building agent runtimes, creative software, mobile workspaces and document workflows. Charlotte, NC. Open to remote roles." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -27,7 +26,6 @@
 <!-- anti-flash: only pre-hide animated elements if motion is allowed -->
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('anim');}</script>
 <script src="https://unpkg.com/lucide@latest"></script>
-
 <style>
   :root { --e-spring: cubic-bezier(0.34,1.56,0.64,1); --e-out: cubic-bezier(0.22,0.7,0.2,1); }
   html { scroll-behavior: smooth; }
@@ -112,259 +110,212 @@
   }
 </style>
 </head>
-
 <body class="font-sans antialiased">
-
 <div id="progress"></div>
 <div class="ambient"></div>
-<div class="aurora" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
-<div id="spot" aria-hidden="true"></div>
-
+<div aria-hidden="true" class="aurora"><span class="b1"></span><span class="b2"></span></div>
+<div aria-hidden="true" id="spot"></div>
 <!-- ===== NAV ===== -->
 <header class="fixed top-0 inset-x-0 z-50">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-line glass px-4 sm:px-5 py-3">
-      <a href="#top" class="flex items-center gap-2.5" aria-label="Mohammed Abumtary — home">
-        <span class="grid place-items-center w-9 h-9 rounded-xl bg-accent/15 border border-accent/30 text-accent font-mono font-bold">M</span>
-        <span class="font-semibold tracking-tight">Mohammed<span class="text-mut"> Abumtary</span></span>
-      </a>
-      <div class="hidden md:flex items-center gap-7 text-sm font-medium">
-        <a href="#processflow" class="nav-link" data-i18n="nav_work">Work</a>
-        <a href="#capabilities" class="nav-link" data-i18n="nav_skills">Capabilities</a>
-        <a href="#experience" class="nav-link" data-i18n="nav_exp">Experience</a>
-        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
-      </div>
-      <div class="flex items-center gap-2.5">
-        <button id="langToggle" class="chip !py-2 font-mono font-medium" aria-label="Switch language">
-          <i data-lucide="languages" class="w-4 h-4 text-accent"></i><span id="langLabel">عربي</span>
-        </button>
-        <a href="#contact" class="hidden sm:inline-flex btn btn-primary !py-2 !px-4 !text-sm" data-i18n="nav_contact">Contact</a>
-        <button id="menuBtn" class="md:hidden grid place-items-center w-9 h-9 rounded-lg border border-line text-ink" aria-label="Open menu"><i data-lucide="menu" class="w-5 h-5"></i></button>
-      </div>
-    </nav>
-  </div>
-  <div id="mobileMenu" class="md:hidden hidden mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="mt-2 rounded-2xl border border-line glass p-3 text-sm font-medium">
-      <a href="#processflow" class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_work">Work</a>
-      <a href="#capabilities" class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_skills">Capabilities</a>
-      <a href="#experience" class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_exp">Experience</a>
-      <a href="#about" class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_about">About</a>
-      <a href="#contact" class="mob-link block px-3 py-2.5 rounded-lg text-accent" data-i18n="nav_contact">Contact</a>
-    </div>
-  </div>
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<nav class="mt-4 flex items-center justify-between rounded-2xl border border-line glass px-4 sm:px-5 py-3">
+<a aria-label="Mohammed Abumtary — home" class="flex items-center gap-2.5" href="#top">
+<span class="grid place-items-center w-9 h-9 rounded-xl bg-accent/15 border border-accent/30 text-accent font-mono font-bold">M</span>
+<span class="font-semibold tracking-tight">Mohammed<span class="text-mut"> Abumtary</span></span>
+</a>
+<div class="hidden md:flex items-center gap-7 text-sm font-medium">
+<a class="nav-link" data-i18n="nav_work" href="#projects">Work</a>
+<a class="nav-link" data-i18n="nav_skills" href="#capabilities">Capabilities</a>
+<a class="nav-link" data-i18n="nav_exp" href="#experience">Experience</a>
+<a class="nav-link" data-i18n="nav_about" href="#about">About</a>
+</div>
+<div class="flex items-center gap-2.5">
+<button aria-label="Switch language" class="chip !py-2 font-mono font-medium" id="langToggle">
+<i class="w-4 h-4 text-accent" data-lucide="languages"></i><span id="langLabel">عربي</span>
+</button>
+<a class="hidden sm:inline-flex btn btn-primary !py-2 !px-4 !text-sm" data-i18n="nav_contact" href="#contact">Contact</a>
+<button aria-label="Open menu" class="md:hidden grid place-items-center w-9 h-9 rounded-lg border border-line text-ink" id="menuBtn"><i class="w-5 h-5" data-lucide="menu"></i></button>
+</div>
+</nav>
+</div>
+<div class="md:hidden hidden mx-auto max-w-7xl px-5 sm:px-8" id="mobileMenu">
+<div class="mt-2 rounded-2xl border border-line glass p-3 text-sm font-medium">
+<a class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_work" href="#projects">Work</a>
+<a class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_skills" href="#capabilities">Capabilities</a>
+<a class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_exp" href="#experience">Experience</a>
+<a class="mob-link block px-3 py-2.5 rounded-lg hover:bg-white/5" data-i18n="nav_about" href="#about">About</a>
+<a class="mob-link block px-3 py-2.5 rounded-lg text-accent" data-i18n="nav_contact" href="#contact">Contact</a>
+</div>
+</div>
 </header>
-
 <main id="top">
-
 <!-- ===== HERO ===== -->
 <section class="relative overflow-hidden pt-36 sm:pt-44 pb-16">
-  <div class="grid-overlay"></div>
-  <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="grid lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-7 rtl-flip">
-        <div class="hero-anim inline-flex items-center gap-2 rounded-full border border-line glass px-3.5 py-1.5 mb-7">
-          <span class="dot-accent"></span>
-          <span class="text-sm text-mut" data-i18n="hero_badge">Open to AI product &amp; full-stack opportunities</span>
-        </div>
-        <h1 class="hero-anim t-display font-bold">
-          <span data-i18n="hero_t1">I don't just </span><span class="text-mut" data-i18n="hero_t2">use</span><span data-i18n="hero_t3"> AI.</span><br>
-          <span data-i18n="hero_t4">I build AI </span><span class="grad-text" data-i18n="hero_t5">systems</span><span data-i18n="hero_t6">.</span>
-        </h1>
-        <p class="hero-anim mt-6 text-lg text-mut max-w-2xl leading-relaxed" data-i18n="hero_sub">
-          AI Product Builder, full-stack developer, and operator. I turn unstructured documents and
-          business requirements into executable BPMN workflows, deployable software, and real-world
-          automation — end to end.
-        </p>
-        <div class="hero-anim mt-9 flex flex-wrap items-center gap-3">
-          <a href="#processflow" class="btn btn-primary magnetic" data-i18n="hero_cta1">Explore ProcessFlow AI <i data-lucide="arrow-right" class="w-4 h-4 ltr-arrow"></i></a>
-          <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta2">Get in touch</a>
-          <a href="https://github.com/Mohammed-AB" target="_blank" rel="noopener" class="btn btn-ghost !px-3.5" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg></a>
-        </div>
-        <div class="hero-anim mt-6 flex items-center gap-5 text-sm text-faint">
-          <span class="inline-flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> Charlotte, NC</span>
-          <span class="inline-flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4"></i> English &amp; العربية</span>
-        </div>
-      </div>
-
-      <div id="heroVisual" class="hero-anim lg:col-span-5">
-        <div class="card !bg-surface/80 shadow-2xl shadow-black/40" dir="ltr">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-line relative z-10">
-            <span class="w-3 h-3 rounded-full bg-red-500/70"></span><span class="w-3 h-3 rounded-full bg-yellow-500/70"></span><span class="w-3 h-3 rounded-full bg-green-500/70"></span>
-            <span class="ml-3 text-xs font-mono text-faint">processflow — build</span>
-          </div>
-          <div class="p-5 font-mono text-[0.82rem] leading-relaxed relative z-10">
-            <p class="text-mut"><span class="text-accent">$</span> processflow ingest <span class="text-ink">requirements.pdf</span></p>
-            <p class="mt-2 text-faint">analyzing document …</p>
-            <p class="mt-1 text-accent2">✓ 142 requirements extracted</p>
-            <p class="text-accent2">✓ RACI matrix + test cases generated</p>
-            <p class="text-accent2">✓ BPMN 2.0 built <span class="text-faint">· Camunda + jBPM</span></p>
-            <p class="text-accent2">✓ full-stack app generated <span class="text-faint">· 8-pass pipeline</span></p>
-            <p class="mt-2 text-mut"><span class="text-accent">→</span> deploy/ ready <span class="text-faint">in 3m 41s</span></p>
-            <p class="mt-1 text-ink flex items-center gap-1.5"><span class="text-accent">$</span> <span class="inline-block w-2 h-4 bg-accent/80 animate-pulse"></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- stat strip -->
-    <div class="hero-anim mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px rounded-2xl border border-line bg-line/40 overflow-hidden">
-      <div class="bg-bg/70 glass p-5 text-center sm:text-left"><div class="text-3xl font-bold tracking-tight"><span class="count" data-target="39">0</span></div><div class="text-sm text-mut mt-1" data-i18n="stat_models">Data models</div></div>
-      <div class="bg-bg/70 glass p-5 text-center sm:text-left"><div class="text-3xl font-bold tracking-tight"><span class="count" data-target="200">0</span><span class="text-accent">+</span></div><div class="text-sm text-mut mt-1" data-i18n="stat_api">API endpoints</div></div>
-      <div class="bg-bg/70 glass p-5 text-center sm:text-left"><div class="text-3xl font-bold tracking-tight"><span class="count" data-target="98">0</span></div><div class="text-sm text-mut mt-1" data-i18n="stat_comp">UI components</div></div>
-      <div class="bg-bg/70 glass p-5 text-center sm:text-left"><div class="text-3xl font-bold tracking-tight"><span class="count" data-target="20">0</span><span class="text-accent">+</span></div><div class="text-sm text-mut mt-1" data-i18n="stat_exp">Export formats</div></div>
-    </div>
-  </div>
+<div class="grid-overlay"></div>
+<div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 rtl-flip">
+<div class="hero-anim inline-flex items-center gap-2 rounded-full border border-line glass px-3.5 py-1.5 mb-7">
+<span class="dot-accent"></span>
+<span class="text-sm text-mut" data-i18n="hero_badge">Open to AI product &amp; full-stack opportunities</span>
+</div>
+<h1 class="hero-anim t-display font-bold">
+<span data-i18n="hero_t1">I build </span><span class="text-mut" data-i18n="hero_t2">AI products</span><span data-i18n="hero_t3"></span><br/>
+<span data-i18n="hero_t4">from idea to </span><span class="grad-text" data-i18n="hero_t5">working software</span><span data-i18n="hero_t6">.</span>
+</h1>
+<p class="hero-anim mt-6 text-lg text-mut max-w-2xl leading-relaxed" data-i18n="hero_sub">AI Product Engineer and full-stack developer in Charlotte, NC. I build agent runtimes, creative applications, mobile workspaces and document workflows. I use Claude Code and Codex throughout implementation, debugging and testing.</p>
+<div class="hero-anim mt-9 flex flex-wrap items-center gap-3">
+<a class="btn btn-primary magnetic" data-i18n="hero_cta1" href="#projects">Explore my projects</a>
+<a class="btn btn-ghost" data-i18n="hero_cta2" href="#contact">Get in touch</a>
+<a aria-label="GitHub" class="btn btn-ghost !px-3.5" href="https://github.com/Mohammed-AB" rel="noopener" target="_blank"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"></path></svg></a>
+</div>
+<div class="hero-anim mt-6 flex items-center gap-5 text-sm text-faint">
+<span class="inline-flex items-center gap-1.5"><i class="w-4 h-4" data-lucide="map-pin"></i> Charlotte, NC</span>
+<span class="inline-flex items-center gap-1.5"><i class="w-4 h-4" data-lucide="globe"></i> English &amp; العربية</span>
+</div>
+</div>
+<div class="hero-anim lg:col-span-5" id="heroVisual">
+<div class="card !bg-surface/80 shadow-2xl shadow-black/40" dir="ltr">
+<div class="flex items-center gap-2 px-4 py-3 border-b border-line relative z-10">
+<span class="w-3 h-3 rounded-full bg-red-500/70"></span><span class="w-3 h-3 rounded-full bg-yellow-500/70"></span><span class="w-3 h-3 rounded-full bg-green-500/70"></span>
+<span class="ml-3 text-xs font-mono text-faint">processflow — build</span>
+</div>
+<div class="p-5 font-mono text-[0.82rem] leading-relaxed relative z-10"><p class="mt-3 text-mut">ILLUSTRATIVE WORKFLOW · NOT A TIMED RESULT</p><p class="mt-3 text-mut">requirements → structured artifacts</p><p class="mt-3 text-mut">agent tools → bounded execution</p><p class="mt-3 text-mut">background jobs → recovery paths</p><p class="mt-3 text-mut">tests → repeatable checks</p></div>
+</div>
+</div>
+</div>
+<!-- stat strip -->
+<div class="hero-anim mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px rounded-2xl border border-line bg-line/40 overflow-hidden"><div class="bg-bg/70 glass p-5"><div class="text-xl font-bold">Agents</div><div class="text-sm text-mut mt-1">Tool execution and recovery</div></div><div class="bg-bg/70 glass p-5"><div class="text-xl font-bold">Full stack</div><div class="text-sm text-mut mt-1">Interfaces, APIs and data</div></div><div class="bg-bg/70 glass p-5"><div class="text-xl font-bold">EN / AR</div><div class="text-sm text-mut mt-1">Bilingual product design</div></div><div class="bg-bg/70 glass p-5"><div class="text-xl font-bold">Remote</div><div class="text-sm text-mut mt-1">Based in Charlotte, NC</div></div></div>
+</div>
 </section>
-
 <!-- ===== TECH MARQUEE ===== -->
-<section class="py-7 border-y border-line/50" aria-hidden="true">
-  <div class="marquee">
-    <div class="marquee-track text-mut font-mono text-sm">
-      <span>TypeScript</span><span class="text-accent">/</span><span>React</span><span class="text-accent">/</span><span>Node</span><span class="text-accent">/</span><span>Hono</span><span class="text-accent">/</span><span>Bun</span><span class="text-accent">/</span><span>Python</span><span class="text-accent">/</span><span>FastAPI</span><span class="text-accent">/</span><span>Prisma</span><span class="text-accent">/</span><span>PostgreSQL</span><span class="text-accent">/</span><span>Docker</span><span class="text-accent">/</span><span>Claude&nbsp;AI</span><span class="text-accent">/</span><span>BPMN&nbsp;2.0</span><span class="text-accent">/</span><span>Camunda</span><span class="text-accent">/</span><span>jBPM</span><span class="text-accent">/</span><span>Tailwind</span><span class="text-accent">/</span><span>Linux</span><span class="text-accent">/</span>
-      <span>TypeScript</span><span class="text-accent">/</span><span>React</span><span class="text-accent">/</span><span>Node</span><span class="text-accent">/</span><span>Hono</span><span class="text-accent">/</span><span>Bun</span><span class="text-accent">/</span><span>Python</span><span class="text-accent">/</span><span>FastAPI</span><span class="text-accent">/</span><span>Prisma</span><span class="text-accent">/</span><span>PostgreSQL</span><span class="text-accent">/</span><span>Docker</span><span class="text-accent">/</span><span>Claude&nbsp;AI</span><span class="text-accent">/</span><span>BPMN&nbsp;2.0</span><span class="text-accent">/</span><span>Camunda</span><span class="text-accent">/</span><span>jBPM</span><span class="text-accent">/</span><span>Tailwind</span><span class="text-accent">/</span><span>Linux</span><span class="text-accent">/</span>
-    </div>
-  </div>
+<section aria-hidden="true" class="py-7 border-y border-line/50">
+<div class="marquee">
+<div class="marquee-track text-mut font-mono text-sm">
+<span>TypeScript</span><span class="text-accent">/</span><span>React</span><span class="text-accent">/</span><span>Node</span><span class="text-accent">/</span><span>Hono</span><span class="text-accent">/</span><span>Bun</span><span class="text-accent">/</span><span>Python</span><span class="text-accent">/</span><span>FastAPI</span><span class="text-accent">/</span><span>Prisma</span><span class="text-accent">/</span><span>PostgreSQL</span><span class="text-accent">/</span><span>Docker</span><span class="text-accent">/</span><span>Claude AI</span><span class="text-accent">/</span><span>BPMN 2.0</span><span class="text-accent">/</span><span>Camunda</span><span class="text-accent">/</span><span>jBPM</span><span class="text-accent">/</span><span>Tailwind</span><span class="text-accent">/</span><span>Linux</span><span class="text-accent">/</span>
+<span>TypeScript</span><span class="text-accent">/</span><span>React</span><span class="text-accent">/</span><span>Node</span><span class="text-accent">/</span><span>Hono</span><span class="text-accent">/</span><span>Bun</span><span class="text-accent">/</span><span>Python</span><span class="text-accent">/</span><span>FastAPI</span><span class="text-accent">/</span><span>Prisma</span><span class="text-accent">/</span><span>PostgreSQL</span><span class="text-accent">/</span><span>Docker</span><span class="text-accent">/</span><span>Claude AI</span><span class="text-accent">/</span><span>BPMN 2.0</span><span class="text-accent">/</span><span>Camunda</span><span class="text-accent">/</span><span>jBPM</span><span class="text-accent">/</span><span>Tailwind</span><span class="text-accent">/</span><span>Linux</span><span class="text-accent">/</span>
+</div>
+</div>
 </section>
-
 <!-- ===== FLAGSHIP: PROCESSFLOW AI ===== -->
-<section id="processflow" class="py-20 sm:py-28">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="reveal flex items-center gap-3 mb-4"><span class="eyebrow text-accent" data-i18n="eyebrow_flagship">// Flagship Project</span><span class="h-px flex-1 bg-line"></span></div>
-    <div class="card glow-border reveal p-7 sm:p-10">
-      <div class="relative z-10">
-      <div class="flex flex-wrap items-start justify-between gap-6">
-        <div class="rtl-flip">
-          <h2 class="t-h2 font-bold flex items-center gap-3"><i data-lucide="workflow" class="w-8 h-8 text-accent"></i> ProcessFlow AI</h2>
-          <p class="mt-2 text-mut text-lg" data-i18n="pf_sub">Enterprise Workflow Automation Platform</p>
-        </div>
-        <span class="inline-flex items-center gap-2 chip !text-xs"><i data-lucide="lock" class="w-3.5 h-3.5"></i><span data-i18n="pf_private">Private source · walkthrough on request</span></span>
-      </div>
-      <p class="mt-6 max-w-3xl text-mut leading-relaxed rtl-flip" data-i18n="pf_desc">
-        An end-to-end platform that reads your requirements and writes the software. Upload an SRS
-        document and ProcessFlow AI produces structured requirements, RACI matrices, test cases,
-        executable BPMN 2.0 for both Camunda and jBPM, and a complete, deployable full-stack
-        application — fully automated through an 8-pass AI pipeline.
-      </p>
-      <div class="mt-8 grid grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">8-pass</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m1">AI code-gen pipeline</div></div>
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">Dual-engine</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m2">BPMN · Camunda + jBPM</div></div>
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">20+</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m3">Export formats</div></div>
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">6</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m4">Compliance frameworks</div></div>
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">EN / AR</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m5">Bilingual + full RTL</div></div>
-        <div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-2xl font-bold">687+</div><div class="text-sm text-mut mt-0.5" data-i18n="pf_m6">Synced i18n keys</div></div>
-      </div>
-      <div class="mt-7 flex flex-wrap gap-2">
-        <span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Tailwind</span><span class="chip">shadcn/ui</span><span class="chip">Hono</span><span class="chip">Bun</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Better Auth</span><span class="chip">Anthropic Claude SDK</span>
-      </div>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="https://github.com/Mohammed-AB/ProcessFlow-AI" target="_blank" rel="noopener" class="btn btn-primary magnetic !text-sm"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg> <span data-i18n="pf_cta1">View the showcase</span></a>
-        <a href="mailto:manfo_4@yahoo.com?subject=ProcessFlow%20AI%20demo" class="btn btn-ghost !text-sm"><i data-lucide="play" class="w-4 h-4"></i> <span data-i18n="pf_cta2">Request a demo</span></a>
-      </div>
-      </div>
-    </div>
-  </div>
+<section class="py-20 sm:py-28" id="projects"><div class="mx-auto max-w-7xl px-5 sm:px-8"><h2 class="t-h2 font-bold">Selected engineering work</h2><p class="mt-5 max-w-3xl text-mut leading-relaxed">My products span agent execution, creative workflows, mobile collaboration and document processing. Several are private and in development for release. Walkthroughs can show the architecture and engineering decisions without exposing source code. Itlaq and Canvas House share some foundations.</p><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-9"><article class="card p-6"><h3 class="text-xl font-semibold">Itlaq</h3><p class="mt-4 text-sm text-mut leading-relaxed">Creative platform with private media, background jobs, subscriptions and a credit ledger.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: concurrent reservations, uncertain provider outcomes and reconciliation.</p></article><article class="card p-6"><h3 class="text-xl font-semibold">Bani</h3><p class="mt-4 text-sm text-mut leading-relaxed">AI app builder with a Claude tool-use loop, project runtimes, persisted conversations and live previews.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: execution boundaries, attachment limits and recovery after a failed turn.</p></article><article class="card p-6"><h3 class="text-xl font-semibold">Canvas House</h3><p class="mt-4 text-sm text-mut leading-relaxed">Image and video workflows with provider integrations and a creative assistant.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: media ownership, review steps, budgets and reusable workflows.</p></article><article class="card p-6"><h3 class="text-xl font-semibold">Maktab / Jiveo</h3><p class="mt-4 text-sm text-mut leading-relaxed">Mobile team workspace using React Native, Expo and Supabase.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: collaboration, navigation and bilingual mobile interfaces.</p></article><article class="card p-6"><h3 class="text-xl font-semibold">plan2mock</h3><p class="mt-4 text-sm text-mut leading-relaxed">Python and FastAPI pipeline for architectural elevations, optional image generation and geometry comparison.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: deterministic preparation, structural drift and verifier limitations.</p></article><article class="card p-6"><h3 class="text-xl font-semibold">CarouselForge</h3><p class="mt-4 text-sm text-mut leading-relaxed">Structured specifications become editable Arabic layouts, slides, captions and packaged exports.</p><p class="mt-4 text-sm text-mut leading-relaxed">Engineering focus: repeatable rendering, RTL layout and paid-generation boundaries.</p></article></div></div></section><section class="py-20 sm:py-28" id="processflow">
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="reveal flex items-center gap-3 mb-4"><span class="eyebrow text-accent" data-i18n="eyebrow_flagship">Selected workflow project</span><span class="h-px flex-1 bg-line"></span></div>
+<div class="card glow-border reveal p-7 sm:p-10">
+<div class="relative z-10">
+<div class="flex flex-wrap items-start justify-between gap-6">
+<div class="rtl-flip">
+<h2 class="t-h2 font-bold flex items-center gap-3"><i class="w-8 h-8 text-accent" data-lucide="workflow"></i> ProcessFlow AI</h2>
+<p class="mt-2 text-mut text-lg" data-i18n="pf_sub">Enterprise Workflow Automation Platform</p>
+</div>
+<span class="inline-flex items-center gap-2 chip !text-xs"><i class="w-3.5 h-3.5" data-lucide="lock"></i><span data-i18n="pf_private">Private source · in development</span></span>
+</div>
+<p class="mt-6 max-w-3xl text-mut leading-relaxed rtl-flip" data-i18n="pf_desc">A platform for turning requirements documents into structured requirements, workflow models and application artifacts. I built a ProcessFlow prototype at Governance House and continue developing the product. The engineering focus is the multi-stage pipeline, intermediate outputs, validation and bilingual interfaces.</p>
+<div class="mt-8 grid grid-cols-2 lg:grid-cols-3 gap-3"><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">Documents</div><div class="text-sm text-mut mt-1">Structured requirements</div></div><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">Workflows</div><div class="text-sm text-mut mt-1">BPMN artifacts</div></div><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">Validation</div><div class="text-sm text-mut mt-1">Intermediate checks</div></div><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">Applications</div><div class="text-sm text-mut mt-1">Generated artifacts</div></div><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">EN / AR</div><div class="text-sm text-mut mt-1">Bilingual interfaces</div></div><div class="rounded-xl border border-line bg-bg/50 p-4"><div class="text-xl font-bold">Prototype</div><div class="text-sm text-mut mt-1">Further release work underway</div></div></div>
+<div class="mt-7 flex flex-wrap gap-2">
+<span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Tailwind</span><span class="chip">shadcn/ui</span><span class="chip">Hono</span><span class="chip">Bun</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Better Auth</span><span class="chip">Anthropic Claude SDK</span>
+</div>
+<div class="mt-8 flex flex-wrap gap-3">
+<a class="btn btn-primary magnetic !text-sm" href="https://github.com/Mohammed-AB/bpmn-workflow-extractor" rel="noopener" target="_blank"><svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"></path></svg> <span data-i18n="pf_cta1">Related public code</span></a>
+<a class="btn btn-ghost !text-sm" href="mailto:manfo_6@yahoo.com?subject=ProcessFlow%20AI%20demo"><i class="w-4 h-4" data-lucide="play"></i> <span data-i18n="pf_cta2">Request a demo</span></a>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ===== CAPABILITIES ===== -->
-<section id="capabilities" class="py-20 sm:py-28 border-t border-line/60">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="reveal max-w-2xl rtl-flip">
-      <span class="eyebrow text-accent" data-i18n="eyebrow_cap">// What I bring</span>
-      <h2 class="mt-3 t-h2 font-bold" data-i18n="cap_title">Builder, operator, systems thinker</h2>
-      <p class="mt-4 text-mut leading-relaxed" data-i18n="cap_sub">A rare blend of deep technical execution and real-world business operations — I can architect the AI, ship the full stack, and understand the process it's automating.</p>
-    </div>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="cpu" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap1_t">AI Systems &amp; Automation</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap1_d">I architect end-to-end AI systems — not one-off prompts.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Document → workflow</span><span class="chip !text-[0.72rem]">Multi-step pipelines</span><span class="chip !text-[0.72rem]">Prompt engineering</span><span class="chip !text-[0.72rem]">BPMN mapping</span><span class="chip !text-[0.72rem]">Output validation</span></div></div>
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="code-2" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap2_t">Full-Stack Engineering</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap2_d">From database to deployable UI, I build and ship the whole stack.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">TypeScript</span><span class="chip !text-[0.72rem]">React / Native</span><span class="chip !text-[0.72rem]">Node · Hono · Bun</span><span class="chip !text-[0.72rem]">Python · FastAPI</span><span class="chip !text-[0.72rem]">Prisma · Postgres</span></div></div>
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="rocket" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap3_t">AI Product &amp; MVP Strategy</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap3_d">Turning a fuzzy idea into a scoped product with a real roadmap.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Concept → MVP</span><span class="chip !text-[0.72rem]">Feature roadmaps</span><span class="chip !text-[0.72rem]">User-flow design</span><span class="chip !text-[0.72rem]">Chat-first UX</span><span class="chip !text-[0.72rem]">Traceability</span></div></div>
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="settings-2" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap4_t">Tech-Enabled Operations</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap4_d">Automating real business operations with data and tooling.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">QR → Sheets → SMS CRM</span><span class="chip !text-[0.72rem]">Retail analytics</span><span class="chip !text-[0.72rem]">Process improvement</span><span class="chip !text-[0.72rem]">90%+ audit scores</span></div></div>
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="users" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap5_t">Leadership &amp; Business</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap5_d">Leading teams and making decisions under real-world pressure.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Team leadership</span><span class="chip !text-[0.72rem]">Staff training</span><span class="chip !text-[0.72rem]">Vendor comms</span><span class="chip !text-[0.72rem]">Quality control</span></div></div>
-      <div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i data-lucide="shield-check" class="w-5 h-5"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap6_t">AI Safety &amp; Evaluation</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap6_d">Red-teaming, eval pipelines, and risk judgment — making LLMs and agents safe and reliable.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">LLM safety evals</span><span class="chip !text-[0.72rem]">Red-teaming</span><span class="chip !text-[0.72rem]">Prompt-injection defense</span><span class="chip !text-[0.72rem]">Agentic oversight</span></div></div>
-    </div>
-
-    <div class="mt-14 reveal">
-      <h3 class="eyebrow text-faint mb-5" data-i18n="stack_title">// Tech Stack</h3>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-7">
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_lang">Languages</div><div class="flex flex-wrap gap-1.5"><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Sass</span></div></div>
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_front">Frontend</div><div class="flex flex-wrap gap-1.5"><span class="chip">React 18</span><span class="chip">React Native</span><span class="chip">Redux</span><span class="chip">Vite</span><span class="chip">Tailwind</span><span class="chip">shadcn/ui</span><span class="chip">Bootstrap</span></div></div>
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_back">Backend</div><div class="flex flex-wrap gap-1.5"><span class="chip">Node.js</span><span class="chip">Hono</span><span class="chip">Bun</span><span class="chip">FastAPI</span><span class="chip">Adonis.js</span><span class="chip">REST APIs</span><span class="chip">Better Auth</span></div></div>
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_data">Data</div><div class="flex flex-wrap gap-1.5"><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">SQLite</span><span class="chip">MongoDB</span></div></div>
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_ai">AI &amp; Workflow</div><div class="flex flex-wrap gap-1.5"><span class="chip">Anthropic SDK</span><span class="chip">Prompt Eng.</span><span class="chip">BPMN 2.0</span><span class="chip">Camunda</span><span class="chip">jBPM / KIE</span><span class="chip">DMN · CMMN</span></div></div>
-        <div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_ops">DevOps &amp; Tools</div><div class="flex flex-wrap gap-1.5"><span class="chip">Docker</span><span class="chip">Compose</span><span class="chip">Maven / kjar</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">WebSocket</span></div></div>
-      </div>
-    </div>
-  </div>
+<section class="py-20 sm:py-28 border-t border-line/60" id="capabilities">
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="reveal max-w-2xl rtl-flip">
+<span class="eyebrow text-accent" data-i18n="eyebrow_cap">// What I bring</span>
+<h2 class="mt-3 t-h2 font-bold" data-i18n="cap_title">Builder, operator, systems thinker</h2>
+<p class="mt-4 text-mut leading-relaxed" data-i18n="cap_sub">I combine software development with hands-on business operations. I can trace a workflow from the user interface through APIs, data storage and background processing, and explain the tradeoffs.</p>
+</div>
+<div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="cpu"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap1_t">AI Systems &amp; Automation</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap1_d">I architect end-to-end AI systems — not one-off prompts.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Document → workflow</span><span class="chip !text-[0.72rem]">Multi-step pipelines</span><span class="chip !text-[0.72rem]">Prompt engineering</span><span class="chip !text-[0.72rem]">BPMN mapping</span><span class="chip !text-[0.72rem]">Output validation</span></div></div>
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="code-2"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap2_t">Full-Stack Engineering</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap2_d">From database to deployable UI, I build and ship the whole stack.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">TypeScript</span><span class="chip !text-[0.72rem]">React / Native</span><span class="chip !text-[0.72rem]">Node · Hono · Bun</span><span class="chip !text-[0.72rem]">Python · FastAPI</span><span class="chip !text-[0.72rem]">Prisma · Postgres</span></div></div>
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="rocket"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap3_t">AI Product &amp; MVP Strategy</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap3_d">Turning a fuzzy idea into a scoped product with a real roadmap.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Concept → MVP</span><span class="chip !text-[0.72rem]">Feature roadmaps</span><span class="chip !text-[0.72rem]">User-flow design</span><span class="chip !text-[0.72rem]">Chat-first UX</span><span class="chip !text-[0.72rem]">Traceability</span></div></div>
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="settings-2"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap4_t">Tech-Enabled Operations</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap4_d">Automating real business operations with data and tooling.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">QR → Sheets → SMS CRM</span><span class="chip !text-[0.72rem]">Retail analytics</span><span class="chip !text-[0.72rem]">Process improvement</span><span class="chip !text-[0.72rem]">90%+ audit scores</span></div></div>
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="users"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap5_t">Leadership &amp; Business</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap5_d">Leading teams and making decisions under real-world pressure.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">Team leadership</span><span class="chip !text-[0.72rem]">Staff training</span><span class="chip !text-[0.72rem]">Vendor comms</span><span class="chip !text-[0.72rem]">Quality control</span></div></div>
+<div class="card reveal p-6 rtl-flip"><div class="grid place-items-center w-11 h-11 rounded-xl bg-accent/12 border border-accent/25 text-accent mb-4 relative z-10"><i class="w-5 h-5" data-lucide="shield-check"></i></div><h3 class="font-semibold text-lg relative z-10" data-i18n="cap6_t">AI Safety &amp; Evaluation</h3><p class="mt-2 text-sm text-mut leading-relaxed relative z-10" data-i18n="cap6_d">Red-teaming, eval pipelines, and risk judgment — making LLMs and agents safe and reliable.</p><div class="mt-4 flex flex-wrap gap-1.5 relative z-10"><span class="chip !text-[0.72rem]">LLM safety evals</span><span class="chip !text-[0.72rem]">Red-teaming</span><span class="chip !text-[0.72rem]">Prompt-injection defense</span><span class="chip !text-[0.72rem]">Agentic oversight</span></div></div>
+</div>
+<div class="mt-14 reveal">
+<h3 class="eyebrow text-faint mb-5" data-i18n="stack_title">// Tech Stack</h3>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-7">
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_lang">Languages</div><div class="flex flex-wrap gap-1.5"><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Sass</span></div></div>
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_front">Frontend</div><div class="flex flex-wrap gap-1.5"><span class="chip">React 18</span><span class="chip">React Native</span><span class="chip">Redux</span><span class="chip">Vite</span><span class="chip">Tailwind</span><span class="chip">shadcn/ui</span><span class="chip">Bootstrap</span></div></div>
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_back">Backend</div><div class="flex flex-wrap gap-1.5"><span class="chip">Node.js</span><span class="chip">Hono</span><span class="chip">Bun</span><span class="chip">FastAPI</span><span class="chip">Adonis.js</span><span class="chip">REST APIs</span><span class="chip">Better Auth</span></div></div>
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_data">Data</div><div class="flex flex-wrap gap-1.5"><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">SQLite</span><span class="chip">MongoDB</span></div></div>
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_ai">AI &amp; Workflow</div><div class="flex flex-wrap gap-1.5"><span class="chip">Anthropic SDK</span><span class="chip">Prompt Eng.</span><span class="chip">BPMN 2.0</span><span class="chip">Camunda</span><span class="chip">jBPM / KIE</span><span class="chip">DMN · CMMN</span></div></div>
+<div><div class="text-sm font-semibold text-accent2 mb-2.5" data-i18n="stack_ops">DevOps &amp; Tools</div><div class="flex flex-wrap gap-1.5"><span class="chip">Docker</span><span class="chip">Compose</span><span class="chip">Maven / kjar</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">WebSocket</span></div></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="py-20 sm:py-28 border-t border-line/60">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="reveal max-w-2xl rtl-flip"><span class="eyebrow text-accent" data-i18n="eyebrow_exp">// Experience</span><h2 class="mt-3 t-h2 font-bold" data-i18n="exp_title">A path through tech &amp; business</h2></div>
-    <div class="mt-12 relative">
-      <div class="absolute left-[7px] sm:left-1/2 top-2 bottom-2 w-px tl-line sm:-translate-x-1/2"></div>
-      <div class="space-y-7">
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2025 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Founder &amp; AI Product Builder <span class="text-accent">· ProcessFlow AI</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp1">Production AI platform: SRS documents → executable BPMN (Camunda + jBPM) → complete deployable apps via an 8-pass pipeline.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2025 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">AI Safety Research Engineer <span class="text-accent">· Governance House</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp_ais">Frontier AI evaluation &amp; agentic safety — LLM safety evals, red-teaming, prompt-injection defense, and scalable oversight to reduce unsafe AI behavior.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2024 — 2025</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">AI App Prototype Builder <span class="text-mut">· Governance House</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp2">Rapid AI-first prototyping, prompt-driven development, and multi-model orchestration for product validation.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2019 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Manager, Technology-Driven Retail <span class="text-mut">· Designers Closet</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp3">Run a high-end streetwear store with AI-assisted marketing, QR → Sheets → SMS CRM automation, and 90%+ audit scores.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2019 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Freelance Web &amp; App Developer</h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp4">Full-stack React / React Native / Node / Python apps — from business requirements to deployed product.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/60 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2018 — 2019</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Teacher Assistant <span class="text-mut">· BloomTech / Lambda School</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp5">Mentored engineering students — 1:1s, code review, and PR feedback across JavaScript and React.</p></div></div>
-        <div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/60 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2018 — 2019</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Fraud Data Analytics Specialist <span class="text-mut">· Assertify</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp6">Reviewed transaction queues using pattern recognition and fraud-trend analysis to separate legitimate from suspicious activity.</p></div></div>
-      </div>
-    </div>
-  </div>
+<section class="py-20 sm:py-28 border-t border-line/60" id="experience">
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="reveal max-w-2xl rtl-flip"><span class="eyebrow text-accent" data-i18n="eyebrow_exp">// Experience</span><h2 class="mt-3 t-h2 font-bold" data-i18n="exp_title">A path through tech &amp; business</h2></div>
+<div class="mt-12 relative">
+<div class="absolute left-[7px] sm:left-1/2 top-2 bottom-2 w-px tl-line sm:-translate-x-1/2"></div>
+<div class="space-y-7">
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2025 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Founder &amp; AI Product Builder <span class="text-accent">· ProcessFlow AI</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp1">Independent development of requirements-to-workflow and application-generation software, with validation and English/Arabic interfaces.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2025 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">AI Safety Research Engineer <span class="text-accent">· Governance House</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp_ais">AI evaluation workflows, prompt-injection testing and development of a ProcessFlow prototype for business workflows.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2024 — 2025</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">AI App Prototype Builder <span class="text-mut">· Governance House</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp2">Rapid AI-first prototyping, prompt-driven development, and multi-model orchestration for product validation.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2019 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Manager, Technology-Driven Retail <span class="text-mut">· Designers Closet</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp3">Run a high-end streetwear store with AI-assisted marketing, QR → Sheets → SMS CRM automation, and 90%+ audit scores.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/80 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2019 — Present</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Freelance Web &amp; App Developer</h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp4">Full-stack React / React Native / Node / Python apps — from business requirements to deployed product.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/60 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2018 — 2019</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Teacher Assistant <span class="text-mut">· BloomTech / Lambda School</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp5">Mentored engineering students — 1:1s, code review, and PR feedback across JavaScript and React.</p></div></div>
+<div class="tl-item reveal relative pl-8 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10"><div class="absolute left-0 top-1.5 sm:left-1/2 sm:-translate-x-1/2 w-3.5 h-3.5 rounded-full bg-accent/60 ring-4 ring-accent/15"></div><div class="sm:text-right sm:pr-10"><span class="eyebrow text-faint">2018 — 2019</span></div><div class="card p-5 sm:mt-0 mt-2"><h3 class="font-semibold relative z-10">Fraud Data Analytics Specialist <span class="text-mut">· Assertify</span></h3><p class="mt-1.5 text-sm text-mut relative z-10" data-i18n="exp6">Reviewed transaction queues using pattern recognition and fraud-trend analysis to separate legitimate from suspicious activity.</p></div></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ===== ABOUT ===== -->
-<section id="about" class="py-20 sm:py-28 border-t border-line/60">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-start">
-    <div class="reveal rtl-flip">
-      <span class="eyebrow text-accent" data-i18n="eyebrow_about">// About</span>
-      <h2 class="mt-3 t-h2 font-bold" data-i18n="about_title">Technical depth meets business sense</h2>
-      <p class="mt-5 text-mut leading-relaxed" data-i18n="about_p1">I'm Mohammed — an AI product builder and full-stack developer who also runs real operations. That combination is the point: I can architect an AI system, ship the full stack around it, and actually understand the business process it's transforming.</p>
-      <p class="mt-4 text-mut leading-relaxed" data-i18n="about_p2">I work natively across English and Arabic, and I build for both — including full right-to-left interfaces. Outside of code, I'm a spoken-word writer, a martial-arts student, and a community volunteer — disciplines that keep me sharp, consistent, and clear.</p>
-      <div class="mt-6 rounded-xl border border-line glass p-5" dir="rtl">
-        <p class="text-lg leading-loose text-ink" style="font-family:'IBM Plex Sans Arabic',sans-serif;">أبني أنظمة ذكاء اصطناعي تُحوّل المتطلبات إلى برمجيات قابلة للتنفيذ — من الفكرة إلى النشر.</p>
-        <p class="mt-1 text-xs text-faint" dir="ltr" style="font-family:'JetBrains Mono',monospace;">// native Arabic &amp; English — RTL-first</p>
-      </div>
-    </div>
-    <div class="reveal grid sm:grid-cols-2 gap-4">
-      <div class="card p-5"><i data-lucide="graduation-cap" class="w-6 h-6 text-accent relative z-10"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_edu_t">Education</h3><p class="mt-1 text-sm text-mut relative z-10">BloomTech / Lambda — <span data-i18n="about_edu_d">Computer Science &amp; Software Engineering</span></p></div>
-      <div class="card p-5"><i data-lucide="languages" class="w-6 h-6 text-accent relative z-10"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_lang_t">Languages</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_lang_d">English (fluent) &amp; Arabic (native) — bilingual product development</p></div>
-      <div class="card p-5"><i data-lucide="pen-tool" class="w-6 h-6 text-accent relative z-10"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_create_t">Creative &amp; Content</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_create_d">Spoken-word writer &amp; storyteller; short-form video &amp; brand voice</p></div>
-      <div class="card p-5"><i data-lucide="heart-handshake" class="w-6 h-6 text-accent relative z-10"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_mentor_t">Mentorship &amp; Community</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_mentor_d">Technical mentoring &amp; community volunteering</p></div>
-    </div>
-  </div>
+<section class="py-20 sm:py-28 border-t border-line/60" id="about">
+<div class="mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-start">
+<div class="reveal rtl-flip">
+<span class="eyebrow text-accent" data-i18n="eyebrow_about">// About</span>
+<h2 class="mt-3 t-h2 font-bold" data-i18n="about_title">Technical depth meets business sense</h2>
+<p class="mt-5 text-mut leading-relaxed" data-i18n="about_p1">I'm Mohammed — an AI product builder and full-stack developer who also runs real operations. That combination is the point: I can architect an AI system, ship the full stack around it, and actually understand the business process it's transforming.</p>
+<p class="mt-4 text-mut leading-relaxed" data-i18n="about_p2">I work natively across English and Arabic, and I build for both — including full right-to-left interfaces. Outside of code, I'm a spoken-word writer, a martial-arts student, and a community volunteer — disciplines that keep me sharp, consistent, and clear.</p>
+<div class="mt-6 rounded-xl border border-line glass p-5" dir="rtl">
+<p class="text-lg leading-loose text-ink" style="font-family:'IBM Plex Sans Arabic',sans-serif;">أبني أنظمة ذكاء اصطناعي تُحوّل المتطلبات إلى برمجيات قابلة للتنفيذ — من الفكرة إلى النشر.</p>
+<p class="mt-1 text-xs text-faint" dir="ltr" style="font-family:'JetBrains Mono',monospace;">// native Arabic &amp; English — RTL-first</p>
+</div>
+</div>
+<div class="reveal grid sm:grid-cols-2 gap-4">
+<div class="card p-5"><i class="w-6 h-6 text-accent relative z-10" data-lucide="graduation-cap"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_edu_t">Education</h3><p class="mt-1 text-sm text-mut relative z-10">BloomTech / Lambda — <span data-i18n="about_edu_d">Lambda School / BloomTech software-development training</span></p></div>
+<div class="card p-5"><i class="w-6 h-6 text-accent relative z-10" data-lucide="languages"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_lang_t">Languages</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_lang_d">English (fluent) &amp; Arabic (native) — bilingual product development</p></div>
+<div class="card p-5"><i class="w-6 h-6 text-accent relative z-10" data-lucide="pen-tool"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_create_t">Creative &amp; Content</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_create_d">Spoken-word writer &amp; storyteller; short-form video &amp; brand voice</p></div>
+<div class="card p-5"><i class="w-6 h-6 text-accent relative z-10" data-lucide="heart-handshake"></i><h3 class="mt-3 font-semibold relative z-10" data-i18n="about_mentor_t">Mentorship &amp; Community</h3><p class="mt-1 text-sm text-mut relative z-10" data-i18n="about_mentor_d">Technical mentoring &amp; community volunteering</p></div>
+</div>
+</div>
 </section>
-
 <!-- ===== CONTACT ===== -->
-<section id="contact" class="py-20 sm:py-28 border-t border-line/60">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
-    <div class="card glow-border reveal relative overflow-hidden p-9 sm:p-14 text-center">
-      <div class="grid-overlay"></div>
-      <div class="relative z-10">
-        <span class="eyebrow text-accent" data-i18n="eyebrow_contact">// Let's build</span>
-        <h2 class="mt-4 font-bold tracking-tight max-w-3xl mx-auto leading-tight" style="font-size:clamp(1.9rem,1.2rem+3vw,3.2rem);" data-i18n="contact_title">Have a problem worth automating?</h2>
-        <p class="mt-5 text-mut max-w-xl mx-auto" data-i18n="contact_sub">I'm open to AI product, automation, and full-stack work. Let's talk about what you're building.</p>
-        <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
-          <a href="mailto:manfo_4@yahoo.com" class="btn btn-primary magnetic"><i data-lucide="mail" class="w-4 h-4"></i> manfo_4@yahoo.com</a>
-          <a href="https://github.com/Mohammed-AB" target="_blank" rel="noopener" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg> GitHub</a>
-        </div>
-        <p class="mt-7 text-sm text-faint inline-flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> Charlotte, NC · <span data-i18n="contact_remote">Remote-friendly</span></p>
-      </div>
-    </div>
-  </div>
+<section class="py-20 sm:py-28 border-t border-line/60" id="contact">
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
+<div class="card glow-border reveal relative overflow-hidden p-9 sm:p-14 text-center">
+<div class="grid-overlay"></div>
+<div class="relative z-10">
+<span class="eyebrow text-accent" data-i18n="eyebrow_contact">// Let's build</span>
+<h2 class="mt-4 font-bold tracking-tight max-w-3xl mx-auto leading-tight" data-i18n="contact_title" style="font-size:clamp(1.9rem,1.2rem+3vw,3.2rem);">Have a problem worth automating?</h2>
+<p class="mt-5 text-mut max-w-xl mx-auto" data-i18n="contact_sub">I'm open to AI product, automation, and full-stack work. Let's talk about what you're building.</p>
+<div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+<a class="btn btn-primary magnetic" href="mailto:manfo_6@yahoo.com"><i class="w-4 h-4" data-lucide="mail"></i> manfo_6@yahoo.com</a>
+<a class="btn btn-ghost" href="https://github.com/Mohammed-AB" rel="noopener" target="_blank"><svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"></path></svg> GitHub</a>
+</div>
+<p class="mt-7 text-sm text-faint inline-flex items-center gap-1.5"><i class="w-4 h-4" data-lucide="map-pin"></i> Charlotte, NC · <span data-i18n="contact_remote">Remote-friendly</span></p>
+</div>
+</div>
+</div>
 </section>
-
 <footer class="border-t border-line/60 py-9">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-faint">
-    <p>© <span id="year"></span> Mohammed Abumtary</p>
-    <p class="font-mono text-xs">Building AI that ships software, not just text.</p>
-  </div>
+<div class="mx-auto max-w-7xl px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-faint">
+<p>© <span id="year"></span> Mohammed Abumtary</p>
+<p class="font-mono text-xs">Mohammed Abumtary · AI Product Engineer</p>
+</div>
 </footer>
-
 </main>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
@@ -432,16 +383,16 @@
   const i18n = {
     nav_work:{en:'Work',ar:'المشاريع'}, nav_skills:{en:'Capabilities',ar:'القدرات'}, nav_exp:{en:'Experience',ar:'الخبرة'}, nav_about:{en:'About',ar:'نبذة'}, nav_contact:{en:'Contact',ar:'تواصل'},
     hero_badge:{en:'Open to AI product & full-stack opportunities',ar:'متاح لفرص في منتجات الذكاء الاصطناعي والتطوير المتكامل'},
-    hero_t1:{en:"I don't just ",ar:'أنا لا '}, hero_t2:{en:'use',ar:'أستخدم'}, hero_t3:{en:' AI.',ar:' الذكاء الاصطناعي فقط.'}, hero_t4:{en:'I build AI ',ar:'أنا أبني '}, hero_t5:{en:'systems',ar:'أنظمة ذكاء اصطناعي'}, hero_t6:{en:'.',ar:'.'},
-    hero_sub:{en:'AI Product Builder, full-stack developer, and operator. I turn unstructured documents and business requirements into executable BPMN workflows, deployable software, and real-world automation — end to end.',ar:'مهندس منتجات ذكاء اصطناعي ومطوّر متكامل ومشغّل أعمال. أحوّل المستندات غير المنظمة ومتطلبات العمل إلى مسارات BPMN قابلة للتنفيذ وبرمجيات جاهزة للنشر وأتمتة واقعية — من البداية إلى النهاية.'},
-    hero_cta1:{en:'Explore ProcessFlow AI',ar:'استكشف ProcessFlow AI'}, hero_cta2:{en:'Get in touch',ar:'تواصل معي'},
+    hero_t1:{"en": "I build ", "ar": "أبني "}, hero_t2:{"en": "AI products", "ar": "منتجات ذكاء اصطناعي"}, hero_t3:{"en": "", "ar": ""}, hero_t4:{"en": "from idea to ", "ar": "من الفكرة إلى "}, hero_t5:{"en": "working software", "ar": "برمجيات تعمل"}, hero_t6:{"en": ".", "ar": "."},
+    hero_sub:{"en": "AI Product Engineer and full-stack developer in Charlotte, NC. I build agent runtimes, creative applications, mobile workspaces and document workflows. I use Claude Code and Codex throughout implementation, debugging and testing.", "ar": "مهندس منتجات ذكاء اصطناعي ومطور متكامل في شارلوت. أبني بيئات تشغيل الوكلاء وتطبيقات إبداعية ومساحات عمل للجوال ومسارات لمعالجة المستندات، وأستخدم Claude Code وCodex في التطوير وتصحيح الأخطاء والاختبار."},
+    hero_cta1:{"en": "Explore my projects", "ar": "استكشف مشاريعي"}, hero_cta2:{en:'Get in touch',ar:'تواصل معي'},
     stat_models:{en:'Data models',ar:'نماذج بيانات'}, stat_api:{en:'API endpoints',ar:'نقاط API'}, stat_comp:{en:'UI components',ar:'مكوّنات واجهة'}, stat_exp:{en:'Export formats',ar:'صيغ تصدير'},
-    eyebrow_flagship:{en:'// Flagship Project',ar:'// المشروع الرئيسي'}, pf_sub:{en:'Enterprise Workflow Automation Platform',ar:'منصّة أتمتة سير العمل للمؤسسات'}, pf_private:{en:'Private source · walkthrough on request',ar:'الشيفرة خاصة · جولة عند الطلب'},
-    pf_desc:{en:'An end-to-end platform that reads your requirements and writes the software. Upload an SRS document and ProcessFlow AI produces structured requirements, RACI matrices, test cases, executable BPMN 2.0 for both Camunda and jBPM, and a complete, deployable full-stack application — fully automated through an 8-pass AI pipeline.',ar:'منصّة متكاملة تقرأ متطلباتك وتكتب البرمجيات. ارفع مستند SRS ويُنتج ProcessFlow AI متطلبات منظّمة ومصفوفات RACI وحالات اختبار ومخطّطات BPMN 2.0 قابلة للتنفيذ على Camunda وjBPM، وتطبيقًا متكاملًا جاهزًا للنشر — بأتمتة كاملة عبر مسار ذكاء اصطناعي من ٨ مراحل.'},
+    eyebrow_flagship:{"en": "Selected workflow project", "ar": "مشروع مختار لأتمتة سير العمل"}, pf_sub:{en:'Enterprise Workflow Automation Platform',ar:'منصّة أتمتة سير العمل للمؤسسات'}, pf_private:{"en": "Private source · in development", "ar": "شيفرة خاصة · قيد التطوير"},
+    pf_desc:{"en": "A platform for turning requirements documents into structured requirements, workflow models and application artifacts. I built a ProcessFlow prototype at Governance House and continue developing the product. The engineering focus is the multi-stage pipeline, intermediate outputs, validation and bilingual interfaces.", "ar": "منصة لتحويل مستندات المتطلبات إلى متطلبات منظمة ونماذج لسير العمل ومخرجات تطبيقية. طورت نموذج ProcessFlow الأولي في Governance House وأواصل تطوير المنتج، مع التركيز على مراحل المعالجة والمخرجات الوسيطة والتحقق والواجهات ثنائية اللغة."},
     pf_m1:{en:'AI code-gen pipeline',ar:'مسار توليد الشيفرة'}, pf_m2:{en:'BPMN · Camunda + jBPM',ar:'BPMN · Camunda + jBPM'}, pf_m3:{en:'Export formats',ar:'صيغ التصدير'}, pf_m4:{en:'Compliance frameworks',ar:'أطر امتثال'}, pf_m5:{en:'Bilingual + full RTL',ar:'ثنائي اللغة + RTL كامل'}, pf_m6:{en:'Synced i18n keys',ar:'مفاتيح ترجمة متزامنة'},
-    pf_cta1:{en:'View the showcase',ar:'عرض المشروع'}, pf_cta2:{en:'Request a demo',ar:'اطلب عرضًا'},
+    pf_cta1:{"en": "Related public code", "ar": "مشروع مرتبط مفتوح المصدر"}, pf_cta2:{en:'Request a demo',ar:'اطلب عرضًا'},
     eyebrow_cap:{en:'// What I bring',ar:'// ما أقدّمه'}, cap_title:{en:'Builder, operator, systems thinker',ar:'باني ومشغّل ومفكّر بالأنظمة'},
-    cap_sub:{en:"A rare blend of deep technical execution and real-world business operations — I can architect the AI, ship the full stack, and understand the process it's automating.",ar:'مزيج نادر من التنفيذ التقني العميق وإدارة الأعمال الواقعية — أصمّم الذكاء الاصطناعي، وأبني المنظومة كاملة، وأفهم العملية التي تتم أتمتتها.'},
+    cap_sub:{"en": "I combine software development with hands-on business operations. I can trace a workflow from the user interface through APIs, data storage and background processing, and explain the tradeoffs.", "ar": "أجمع بين تطوير البرمجيات والخبرة العملية في إدارة الأعمال. أتتبع سير العمل من الواجهة إلى واجهات البرمجة وتخزين البيانات والمعالجة الخلفية وأشرح المفاضلات التقنية."},
     cap1_t:{en:'AI Systems & Automation',ar:'أنظمة وأتمتة الذكاء الاصطناعي'}, cap1_d:{en:'I architect end-to-end AI systems — not one-off prompts.',ar:'أصمّم أنظمة ذكاء اصطناعي متكاملة — لا مجرّد أوامر منفردة.'},
     cap2_t:{en:'Full-Stack Engineering',ar:'هندسة متكاملة'}, cap2_d:{en:'From database to deployable UI, I build and ship the whole stack.',ar:'من قاعدة البيانات إلى الواجهة، أبني وأطلق المنظومة كاملة.'},
     cap3_t:{en:'AI Product & MVP Strategy',ar:'استراتيجية المنتج والـMVP'}, cap3_d:{en:'Turning a fuzzy idea into a scoped product with a real roadmap.',ar:'تحويل الفكرة الغامضة إلى منتج محدّد بخارطة طريق واقعية.'},
@@ -450,8 +401,8 @@
     cap6_t:{en:'AI Safety & Evaluation',ar:'سلامة وتقييم الذكاء الاصطناعي'}, cap6_d:{en:'Red-teaming, eval pipelines, and risk judgment — making LLMs and agents safe and reliable.',ar:'اختبار الفرق الحمراء، ومسارات التقييم، وتقدير المخاطر — لجعل النماذج والوكلاء آمنين وموثوقين.'},
     stack_title:{en:'// Tech Stack',ar:'// التقنيات'}, stack_lang:{en:'Languages',ar:'اللغات'}, stack_front:{en:'Frontend',ar:'الواجهة'}, stack_back:{en:'Backend',ar:'الخادم'}, stack_data:{en:'Data',ar:'البيانات'}, stack_ai:{en:'AI & Workflow',ar:'الذكاء وسير العمل'}, stack_ops:{en:'DevOps & Tools',ar:'الأدوات والتشغيل'},
     eyebrow_exp:{en:'// Experience',ar:'// الخبرة'}, exp_title:{en:'A path through tech & business',ar:'مسار بين التقنية والأعمال'},
-    exp1:{en:'Production AI platform: SRS documents → executable BPMN (Camunda + jBPM) → complete deployable apps via an 8-pass pipeline.',ar:'منصّة ذكاء اصطناعي إنتاجية: مستندات SRS ← BPMN قابل للتنفيذ (Camunda + jBPM) ← تطبيقات متكاملة جاهزة للنشر عبر مسار من ٨ مراحل.'},
-    exp_ais:{en:'Frontier AI evaluation & agentic safety — LLM safety evals, red-teaming, prompt-injection defense, and scalable oversight to reduce unsafe AI behavior.',ar:'تقييم الذكاء الاصطناعي المتقدّم وسلامة الوكلاء — تقييمات سلامة النماذج اللغوية، واختبار الفرق الحمراء، والدفاع ضد حقن الأوامر، والإشراف القابل للتوسّع للحدّ من السلوك غير الآمن.'},
+    exp1:{"en": "Independent development of requirements-to-workflow and application-generation software, with validation and English/Arabic interfaces.", "ar": "تطوير مستقل لبرمجيات تحويل المتطلبات إلى سير عمل ومخرجات تطبيقية، مع التحقق وواجهات بالعربية والإنجليزية."},
+    exp_ais:{"en": "AI evaluation workflows, prompt-injection testing and development of a ProcessFlow prototype for business workflows.", "ar": "مسارات لتقييم الذكاء الاصطناعي واختبار حقن التعليمات وتطوير نموذج ProcessFlow الأولي لسير العمل."},
     exp2:{en:'Rapid AI-first prototyping, prompt-driven development, and multi-model orchestration for product validation.',ar:'نمذجة سريعة قائمة على الذكاء الاصطناعي، وتطوير موجّه بالأوامر، وتنسيق متعدّد النماذج للتحقّق من المنتج.'},
     exp3:{en:'Run a high-end streetwear store with AI-assisted marketing, QR → Sheets → SMS CRM automation, and 90%+ audit scores.',ar:'إدارة متجر أزياء راقٍ بتسويق معزّز بالذكاء الاصطناعي، وأتمتة QR ← Sheets ← SMS، ودرجات تدقيق فوق ٩٠٪.'},
     exp4:{en:'Full-stack React / React Native / Node / Python apps — from business requirements to deployed product.',ar:'تطبيقات متكاملة React / React Native / Node / Python — من متطلبات العمل إلى منتج منشور.'},
@@ -460,7 +411,7 @@
     eyebrow_about:{en:'// About',ar:'// نبذة'}, about_title:{en:'Technical depth meets business sense',ar:'عمق تقني يلتقي بحسّ الأعمال'},
     about_p1:{en:"I'm Mohammed — an AI product builder and full-stack developer who also runs real operations. That combination is the point: I can architect an AI system, ship the full stack around it, and actually understand the business process it's transforming.",ar:'أنا محمد — مهندس منتجات ذكاء اصطناعي ومطوّر متكامل يدير أيضًا عمليات واقعية. هذا المزيج هو الأساس: أصمّم نظام الذكاء الاصطناعي، وأبني المنظومة حوله، وأفهم فعليًا عملية العمل التي يحوّلها.'},
     about_p2:{en:"I work natively across English and Arabic, and I build for both — including full right-to-left interfaces. Outside of code, I'm a spoken-word writer, a martial-arts student, and a community volunteer — disciplines that keep me sharp, consistent, and clear.",ar:'أعمل بطلاقة بالعربية والإنجليزية، وأبني للغتين — بما في ذلك واجهات RTL كاملة. وخارج البرمجة، أنا كاتب شعر منطوق، وطالب فنون قتالية، ومتطوّع مجتمعي — انضباطات تبقيني حادًّا ومتّسقًا وواضحًا.'},
-    about_edu_t:{en:'Education',ar:'التعليم'}, about_edu_d:{en:'Computer Science & Software Engineering',ar:'علوم الحاسب وهندسة البرمجيات'}, about_lang_t:{en:'Languages',ar:'اللغات'}, about_lang_d:{en:'English (fluent) & Arabic (native) — bilingual product development',ar:'الإنجليزية (بطلاقة) والعربية (لغة أمّ) — تطوير منتجات ثنائي اللغة'},
+    about_edu_t:{en:'Education',ar:'التعليم'}, about_edu_d:{"en": "Lambda School / BloomTech software-development training", "ar": "تدريب في تطوير البرمجيات لدى Lambda School / BloomTech"}, about_lang_t:{en:'Languages',ar:'اللغات'}, about_lang_d:{en:'English (fluent) & Arabic (native) — bilingual product development',ar:'الإنجليزية (بطلاقة) والعربية (لغة أمّ) — تطوير منتجات ثنائي اللغة'},
     about_create_t:{en:'Creative & Content',ar:'الإبداع والمحتوى'}, about_create_d:{en:'Spoken-word writer & storyteller; short-form video & brand voice',ar:'كاتب شعر منطوق وراوٍ؛ فيديو قصير وصوت العلامة التجارية'}, about_mentor_t:{en:'Mentorship & Community',ar:'الإرشاد والمجتمع'}, about_mentor_d:{en:'Technical mentoring & community volunteering',ar:'إرشاد تقني وتطوّع مجتمعي'},
     eyebrow_contact:{en:"// Let's build",ar:'// لنبنِ معًا'}, contact_title:{en:'Have a problem worth automating?',ar:'لديك مشكلة تستحقّ الأتمتة؟'}, contact_sub:{en:"I'm open to AI product, automation, and full-stack work. Let's talk about what you're building.",ar:'أنا متاح لأعمال منتجات الذكاء الاصطناعي والأتمتة والتطوير المتكامل. لنتحدّث عمّا تبنيه.'}, contact_remote:{en:'Remote-friendly',ar:'متاح للعمل عن بُعد'},
   };
